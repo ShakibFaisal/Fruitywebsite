@@ -1,0 +1,205 @@
+ * {
+     margin: 0;
+     padding: 0;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     color: white;
+ }
+
+ html,
+ body {
+     height: 100%;
+     width: 100%;
+ }
+
+ a {
+     text-decoration: none;
+ }
+
+ li {
+     list-style: none;
+     font-size: 20px;
+ }
+
+ nav {
+
+     padding-top: 10px;
+     position: fixed;
+     z-index: 1;
+     height: 65px;
+     width: 100%;
+ }
+
+ nav ul {
+     display: flex;
+     gap: 50px;
+     align-items: center;
+
+ }
+
+ .logo {
+     font-size: 20px;
+     font-weight: bolder;
+     margin-left: 100px;
+
+ }
+
+ .nav-icon {
+     height: 30px;
+     width: 30px;
+ }
+
+
+ video {
+     height: 100%;
+     width: 100%;
+     object-fit: cover;
+     position: fixed;
+     z-index: -1;
+ }
+
+ main {
+     height: 100%;
+     width: 100%;
+     position: relative;
+ }
+
+ .page1 {
+     height: 100%;
+     width: 100%;
+     position: relative;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     gap: 20px;
+     background: #00000041;
+ }
+
+ .page1 h1 {
+     font-weight: 900;
+     font-size: 50px;
+ }
+
+ .page1 h2 {
+     font-size: 25px;
+ }
+
+ button {
+     background-color: #ED365A;
+     padding: 12px 30px;
+     border: none;
+     border-radius: 11px;
+     font-weight: 900;
+     font-size: 20px;
+ }
+
+ .page2 {
+     height: 100%;
+     width: 100%;
+     background: #0000006b;
+ }
+
+ .page2 h1 {
+     text-align: center;
+ }
+
+ .box {
+     height: 65vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 50px;
+
+ }
+
+ .boxs {
+     height: 80%;
+     width: 25%;
+     border-radius: 10px;
+     background-size: cover;
+     background-position: center;
+     overflow: hidden;
+     transition: all ease 0.7;
+ }
+
+ #box1 {
+     background-image: url(images/apple.jpg);
+ }
+
+ #box2 {
+     background-image: url(images/currants-3538617_1280.jpg);
+ }
+
+ #box3 {
+     background-image: url(images/strawberry-1330459_1280.jpg);
+ }
+
+ .text {
+     height: 100%;
+     width: 100%;
+     background: #ed365b85;
+     padding-top: 50px;
+     opacity: 0;
+     transition: all ease 0.7;
+
+ }
+
+ .text p {
+     color: black;
+     padding: 30px;
+ }
+
+ .boxs:hover .text {
+     opacity: 1;
+     cursor: pointer;
+ }
+
+ .boxs:hover {
+
+     transform: scale(1.2);
+ }
+
+ .scoller {
+     margin-top: 30px;
+     white-space: nowrap;
+     overflow-x: auto;
+     overflow-y: hidden;
+
+
+
+ }
+ .scoller::-webkit-scrollbar{
+    display: none;
+ }
+
+ .scoller1 {
+     display: inline-block;
+     animation-name: scoller;
+     animation-duration: 25s;
+     animation-timing-function: linear;
+     animation-iteration-count: infinite;
+ }
+
+ .scoller h4 {
+     display: inline-block;
+     margin-left: 20px;
+     font-size: 80px;
+     font-weight: 900;
+     font-family: gilroy;
+     color: transparent;
+     transition: all linear 0.6s;
+     -webkit-text-stroke: 1px #adff2f;
+     cursor: pointer;
+ }
+ .scoller h4:hover{
+    color:#adff2f;
+ }
+ @keyframes scoller {
+     from {
+         transform: translate(0);
+     }
+     to {
+         transform: translate(-100%);
+     }
+
+ }
